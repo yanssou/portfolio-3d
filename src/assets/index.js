@@ -20,17 +20,32 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import mysql from "./tech/mysql.png";
+import angular from "./tech/angular.png";
+import aws from "./tech/aws.png";
+
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import grinlive from "./company/grinlive.png";
+import etna from "./company/etna.png";
+import sorbonne from "./company/sorbonne.png"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import bank from "./bank-modern.png";
+import medianis from "./company/medianis_hero.png";
 
 export {
+  medianis,
+  aws,
+  angular,
+  mysql,
+  sorbonne,
+  bank,
   logo,
   backend,
   creator,
@@ -55,6 +70,8 @@ export {
   meta,
   shopify,
   starbucks,
+  grinlive,
+  etna,
   tesla,
   carrent,
   jobit,

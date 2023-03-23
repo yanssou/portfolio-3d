@@ -6,6 +6,9 @@ import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
 
+// template_1srzh5m
+// service id : service_4yz0t8k
+// public key : yOuV3YnxSdl5ZQFan
 const Contact = () => {
   const formRef = useRef()
   const [form, setForm] = useState({
@@ -15,9 +18,35 @@ const Contact = () => {
   })
   const [loading, setLoading] = useState(false)
 
-  const handleChange = (e) => {}
+  const handleChange = (e) => {
+    const { name, value } = e.target
 
-  const handleSubmit = (e) => {}
+    setForm({...form, [name]: value})
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setLoading(true)
+    emailjs.send("service_4yz0t8k", "template_1srzh5m", {
+      from_name: form.name,
+      to_name: "Yanis",
+      from_email: form.email,
+      to_email: "yanis.ikhe@gmail.com",
+      message: form.message,
+    } ,"yOuV3YnxSdl5ZQFan").then(() => {
+      setLoading(false)
+      alert('Merci pour votre message ! Je vous répondrai dans les plus brefs délais !')
+      setForm({
+        name: "",
+        email: "",
+        message: ""
+      })
+    }, (error) => {
+      setLoading(false)
+      console.log(error)
+      alert("Oups, quelque chose s'est mal passé...")
+    })
+  }
 
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>

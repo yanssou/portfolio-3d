@@ -1,5 +1,10 @@
 // a modifier pour modifier l'affichage des informations sur le site
 import {
+    medianis,
+    aws,
+    angular,
+    sorbonne,
+    etna,
     mobile,
     backend,
     creator,
@@ -14,26 +19,21 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
+    grinlive,
+    bank,
     threejs,
+    mysql
   } from "../assets";
   
   export const navLinks = [
     {
       id: "about",
-      title: "About",
+      title: "À propos",
     },
     {
       id: "work",
-      title: "Work",
+      title: "Projets",
     },
     {
       id: "contact",
@@ -43,19 +43,19 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Développeur Web",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Développeur Mobile",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Développeur Backend",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Anglais C1",
       icon: creator,
     },
   ];
@@ -74,10 +74,6 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
     },
@@ -94,10 +90,6 @@ import {
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
       name: "Three JS",
       icon: threejs,
     },
@@ -106,68 +98,57 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
-    },
-    {
       name: "docker",
       icon: docker,
     },
+    {
+      name: "mysql",
+      icon: mysql,
+    },
+    {
+      name: "angular",
+      icon: angular,
+    },
+    {
+      name: "aws",
+      icon: aws,
+    }
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Développeur Web et Mobile",
+      company_name: "GrinLive",
+      icon: grinlive,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "Sep 2022 - en cours",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Développement d'une application de conférence en temps réel innovante et nouvelle sur le marché en React Native et en utilisant le WebRTC.",
+        "Mise en place d'un serveur avec nginx et OVH afin d'héberger un site web de conférences en temps réel.",
+        "Création et gestion d'un site web en ReactJS permettant la mise en place de conférences en temps réel, gestion d'une base de données d'utilisateurs avec mySQL.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Master Architecte Logiciel et Développement",
+      company_name: "ETNA",
+      icon: etna,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Oct 2022 - en cours",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Site web (framework Angular) et application mobile (Flutter) d'un e-commerce. Gestion des produits et des utilisateurs a à l'aide d'une API REST (Node JS, Express, JWT) et une base de données (MySQL) et déploiement à l'aide de Docker, AWS et Terraform.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      title: "Master Architecte Logiciel et Développement",
+      company_name: "Sorbonne Université",
+      icon: sorbonne,
+      iconBg: "#383E56",
+      date: "Oct 2022 - en cours",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Gestion de l'intelligence artificielle d'un groupe de personnages dans un petit jeu en Python à l'aide de pyGame (gestion de boucles, stratégies, comportements, adaptation).",
+        "Création d'un jeu vidéo jouable directement sur le navigateur à l'aide de HTML, Javascript et CSS (gestion de la vélocité, gravité, keymapping)."
       ],
-    },
+    }
   ];
   
   const testimonials = [
@@ -199,16 +180,16 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Landing Page pour une banque en ligne",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Application web réalisée en React et TailwindCSS. Il s'agit d'un site web factice pour une banque en ligne. Le site est entièrement responsive et moderne. Il permet à l'utilisateur de découvrir les caractéristiques de la banque pas à pas au fur et à mesure qu'il navigue sur le site.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "vite",
           color: "green-text-gradient",
         },
         {
@@ -216,51 +197,30 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: bank,
+      source_code_link: "https://github.com/yanssou/responsive-modern-bank-website",
     },
     {
-      name: "Job IT",
+      name: "Landing Page pour une agence de marketing digital",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Application web réalisée en React et TailwindCSS. Il s'agit d'un site web factice pour une agence de marketing digital. Le site est entièrement responsive et moderne. Il permet à l'utilisateur de découvrir les caractéristiques de l'agence pas à pas au fur et à mesure qu'il navigue sur le site. Une interaction avec l'utilisateur est mise en place afin de lui proposer une expérience agréable.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "vite",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-    },
+      image: medianis,
+      source_code_link: "https://github.com/yanssou/digital-marketing-agency-website",
+    }
   ];
   
   export { services, technologies, experiences, testimonials, projects };

@@ -41,7 +41,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[32px]"
       >
-        Je suis un développeur passioné par la programmation et aussi par le design. Je prend plaisir à mélanger ces deux influences afin de faire les sites les plus agréables à la vue comme à l'usage.
+        Je suis actuellement en Master 1 et passioné par la programmation et aussi par le design. Je  suis à la recherche d'une alternance dans le domaine du web que je peux commencer dès maintenant et jusqu'au 20 Décembre 2024. Mon rythme est d'un vendredi toutes les 3 semaines en présentiel et le reste est de l'e-learning faisable depuis l'entreprise ou chez moi.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
